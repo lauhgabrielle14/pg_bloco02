@@ -29,12 +29,10 @@ public class Categoria {
 	@Column(nullable = false, length = 100)
 	private String tipo;
 	
-	/*
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties(value = "categoria", allowSetters = true)
 	private List<Produto> produto;
 
-	*/
 	public Long getId() {
 		return id;
 	}
@@ -51,8 +49,7 @@ public class Categoria {
 		this.tipo = tipo;
 	}
 	
-	/*
-
+	
 	public List<Produto> getProduto() {
 		return produto;
 	}
@@ -61,5 +58,5 @@ public class Categoria {
 		this.produto = produto;
 	}
 	
-	*/
+	
 }
