@@ -2,7 +2,7 @@ package com.generation.livraria;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+//Teste
 @SpringBootApplication
 public class LivrariaApplication {
 
