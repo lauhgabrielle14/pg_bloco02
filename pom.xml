@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.generation</groupId>
-	<artifactId>livraria</artifactId>
+	<artifactId>famracia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>livraria</name>
-	<description>Projeto Livraria</description>
+	<name>farmacia</name>
+	<description>Projeto Farmacia</description>
 	<url/>
 	<licenses>
 		<license/>
