@@ -85,15 +85,13 @@ public class ProdutoController {
 				.orElse(ResponseEntity.notFound().build());
 	}
 
-	// Consulta pelo preço maior do que o preço digitado emm ordem crescente
-	
+		
 	@GetMapping("/preco_maior/{preco}")
 	public ResponseEntity<List<Produto>> getPrecoMaiorQue(@PathVariable BigDecimal preco){ 
 		return ResponseEntity.ok(produtoRepository.findByPrecoGreaterThanOrderByPreco(preco));
 	}
 	
-	// Consulta pelo preço menor do que o preço digitado em ordem decrescente
-	
+		
 	@GetMapping("/preco_menor/{preco}")
 	public ResponseEntity<List<Produto>> getPrecoMenorQue(@PathVariable BigDecimal preco){ 
 		return ResponseEntity.ok(produtoRepository.findByPrecoLessThanOrderByPrecoDesc(preco));
